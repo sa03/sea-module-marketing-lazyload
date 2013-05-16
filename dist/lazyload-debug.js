@@ -37,10 +37,11 @@ define("marketing/lazyload/1.8.4/lazyload-debug", [ "marketing/zepto/1.0.0/zepto
                 var counter = 0;
                 elements.each(function() {
                     var $this = $(this);
-                    if (settings.skip_invisible) {
-                        return;
-                    }
-                    if ($.abovethetop(this, settings) || $.leftofbegin(this, settings)) {} else if (!$.belowthefold(this, settings) && !$.rightoffold(this, settings)) {
+                    //                if (settings.skip_invisible && !$this.is(":visible")) {
+                    //                    return;
+                    //                }
+                    //                if ($.abovethetop(this, settings) || $.leftofbegin(this, settings)) {
+                    if ($.abovethetop(this, settings)) {} else if (!$.belowthefold(this, settings)) {
                         $this.trigger("appear");
                         /* if we found an image we'll load, reset the counter */
                         counter = 0;
@@ -123,7 +124,7 @@ define("marketing/lazyload/1.8.4/lazyload-debug", [ "marketing/zepto/1.0.0/zepto
                 });
             }
             /* Force initial check if images should appear. */
-            $(window).load(function() {
+            $(window).on("load", function() {
                 update();
             });
             return this;
