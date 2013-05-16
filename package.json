@@ -1,0 +1,42 @@
+{
+    "family": "marketing",
+    "name": "lazyload",
+    "version": "1.8.4",
+    "description": "基于 zepto 的图片懒加载组件，由 jquery-lazyload 插件改造而来",
+    "main": "index.js",
+    "scripts": {
+        "test": "grunt test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pushiming/sea-module-marketing-lazyload.git"
+    },
+    "keywords": [
+        "lazyload",
+        "mobile"
+    ],
+    "author": {
+        "name": "Mika Tuupola",
+        "url": "http://www.appelsiini.net/"
+    },
+    "contributors": [
+        "法海 <fahai@taobao.com>"
+    ],
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-cmd-concat": "~0.2.2",
+        "grunt-cmd-transport": "~0.2.3",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt-contrib-clean": "~0.4.1"
+    },
+    "spm": {
+        "alias": {
+            "zepto": "marketing/zepto/1.0.0/zepto"
+        },
+        "devAlias": {
+            "seajs": "seajs/seajs/2.0.0/sea"
+        }
+    }
+}
