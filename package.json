@@ -33,7 +33,7 @@
     },
     "spm": {
         "alias": {
-            "zepto": "marketing/zepto/1.0.0/zepto"
+            "zepto": "zepto/zepto/1.0.0/zepto"
         },
         "devAlias": {
             "seajs": "seajs/seajs/2.0.0/sea"

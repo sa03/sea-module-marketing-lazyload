@@ -1,5 +1,5 @@
-define("marketing/lazyload/1.8.4/lazyload-debug", [ "marketing/zepto/1.0.0/zepto-debug" ], function(require, exports, module) {
-    var Zepto = require("marketing/zepto/1.0.0/zepto-debug");
+define("marketing/lazyload/1.8.4/lazyload-debug", [ "zepto/zepto/1.0.0/zepto-debug" ], function(require, exports, module) {
+    var Zepto = require("zepto/zepto/1.0.0/zepto-debug");
     /**
  * 删除了自定义的选择器
  */
